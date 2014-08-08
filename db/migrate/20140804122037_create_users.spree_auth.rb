@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
         t.string   "crypted_password",          :limit => 128
         t.string   "salt",                      :limit => 128
         t.string   "email"
-        t.string   "name"
+        t.string   "username"
         t.string   "remember_token"
         t.string   "remember_token_expires_at"
         t.string   "persistence_token"

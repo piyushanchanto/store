@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140804122041) do
+ActiveRecord::Schema.define(:version => 20140806061206) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -638,6 +638,7 @@ ActiveRecord::Schema.define(:version => 20140804122041) do
     t.datetime "updated_at",                                           :null => false
     t.string   "spree_api_key",          :limit => 48
     t.datetime "remember_created_at"
+    t.string   "username"
   end
 
   add_index "spree_users", ["email"], :name => "email_idx_unique", :unique => true
